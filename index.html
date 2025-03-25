@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <div class="wrapper" id="wrapper">
+      <!-- Sidebar -->
+      <nav id="sidebar">
+        <div class="sidebar-header">
+          <h3>App Menu</h3>
+        </div>
+
+        <ul class="list-unstyled components">
+          <li>
+            <a href="#" class="active" data-page="dashboard">
+              <i class="bi bi-speedometer2"></i>
+              <span>Dashboard</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-page="analytics">
+              <i class="bi bi-graph-up"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-page="users">
+              <i class="bi bi-people"></i>
+              <span>Users</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-page="settings">
+              <i class="bi bi-gear"></i>
+              <span>Settings</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" data-page="support">
+              <i class="bi bi-question-circle"></i>
+              <span>Support</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Page Content -->
+      <div id="content">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <button type="button" id="sidebarCollapse" class="btn">
+              <i class="bi bi-list fs-4"></i>
+            </button>
+            <h4 class="mb-0 ms-2" id="pageTitle">Dashboard</h4>
+          </div>
+        </nav>
+
+        <div class="container-fluid py-4 content-padding-mobile">
+          <div id="dashboard-content" class="page-content active">
+            <div class="row">
+              <div class="col-12">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <!-- Metrics Cards Grid -->
+                    <div class="row g-3">
+                      <div class="card-body">
+                        <h5 class="card-title">Dashboard</h5>
+                        <p class="card-text">
+                          Your dashboard will appear here.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Recent Activity</h5>
+                    <p class="card-text">
+                      Your recent activities will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card mb-4">
+                  <div class="card-body">
+                    <h5 class="card-title">Performance</h5>
+                    <p class="card-text">
+                      Your performance metrics will appear here.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12">
+                  <div class="card mb-4">
+                    <div class="card-body">
+                      <!-- Metrics Cards Grid -->
+                      <div class="row g-3">
+                        <div class="card-body">
+                          <h5 class="card-title">Dashboard</h5>
+                          <div
+                            class="container-fluid py-4 content-padding-mobile"
+                          >
+                            <div class="row mb-4">
+                              <div class="col-12">
+                                <h2>Dashboard Overview</h2>
+                                <p class="text-muted">
+                                  Performance metrics for the current month
+                                </p>
+                              </div>
+                            </div>
+
+                            <!-- Metrics Cards Grid -->
+                            <div class="row g-3">
+                              <!-- Users Card -->
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card metric-card h-100">
+                                  <div class="card-body">
+                                    <div
+                                      class="d-flex justify-content-between align-items-start mb-2"
+                                    >
+                                      <h5 class="card-title text-muted mb-0">
+                                        Users
+                                      </h5>
+                                      <div
+                                        class="metric-icon bg-light-primary text-primary"
+                                      >
+                                        <i class="bi bi-people-fill"></i>
+                                      </div>
+                                    </div>
+
+                                    <h3 class="metric-value mb-1">24,786</h3>
+
+                                    <div class="d-flex align-items-center">
+                                      <span class="change-positive me-2">
+                                        <i class="bi bi-arrow-up-short"></i
+                                        >12.5%
+                                      </span>
+                                      <span class="text-muted small"
+                                        >vs last month</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="card-footer bg-transparent p-3 d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="small text-muted"
+                                      >Updated 2 hours ago</span
+                                    >
+                                    <a
+                                      href="#"
+                                      class="text-decoration-none small"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Revenue Card -->
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card metric-card h-100">
+                                  <div class="card-body">
+                                    <div
+                                      class="d-flex justify-content-between align-items-start mb-2"
+                                    >
+                                      <h5 class="card-title text-muted mb-0">
+                                        Revenue
+                                      </h5>
+                                      <div
+                                        class="metric-icon bg-light-success text-success"
+                                      >
+                                        <i class="bi bi-currency-dollar"></i>
+                                      </div>
+                                    </div>
+
+                                    <h3 class="metric-value mb-1">$128,430</h3>
+
+                                    <div class="d-flex align-items-center">
+                                      <span class="change-positive me-2">
+                                        <i class="bi bi-arrow-up-short"></i>8.2%
+                                      </span>
+                                      <span class="text-muted small"
+                                        >vs last month</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="card-footer bg-transparent p-3 d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="small text-muted"
+                                      >Updated 1 hour ago</span
+                                    >
+                                    <a
+                                      href="#"
+                                      class="text-decoration-none small"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Conversion Card -->
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card metric-card h-100">
+                                  <div class="card-body">
+                                    <div
+                                      class="d-flex justify-content-between align-items-start mb-2"
+                                    >
+                                      <h5 class="card-title text-muted mb-0">
+                                        Conversion
+                                      </h5>
+                                      <div
+                                        class="metric-icon bg-light-info text-info"
+                                      >
+                                        <i class="bi bi-arrow-repeat"></i>
+                                      </div>
+                                    </div>
+
+                                    <h3 class="metric-value mb-1">5.28%</h3>
+
+                                    <div class="d-flex align-items-center">
+                                      <span class="change-negative me-2">
+                                        <i class="bi bi-arrow-down-short"></i
+                                        >1.2%
+                                      </span>
+                                      <span class="text-muted small"
+                                        >vs last month</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="card-footer bg-transparent p-3 d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="small text-muted"
+                                      >Updated 3 hours ago</span
+                                    >
+                                    <a
+                                      href="#"
+                                      class="text-decoration-none small"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!-- Active Users Card -->
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="card metric-card h-100">
+                                  <div class="card-body">
+                                    <div
+                                      class="d-flex justify-content-between align-items-start mb-2"
+                                    >
+                                      <h5 class="card-title text-muted mb-0">
+                                        Active
+                                      </h5>
+                                      <div
+                                        class="metric-icon bg-light-warning text-warning"
+                                      >
+                                        <i
+                                          class="bi bi-lightning-charge-fill"
+                                        ></i>
+                                      </div>
+                                    </div>
+
+                                    <h3 class="metric-value mb-1">3,402</h3>
+
+                                    <div class="d-flex align-items-center">
+                                      <span class="change-positive me-2">
+                                        <i class="bi bi-arrow-up-short"></i>4.6%
+                                      </span>
+                                      <span class="text-muted small"
+                                        >vs last month</span
+                                      >
+                                    </div>
+                                  </div>
+                                  <div
+                                    class="card-footer bg-transparent p-3 d-flex justify-content-between align-items-center"
+                                  >
+                                    <span class="small text-muted"
+                                      >Updated 5 mins ago</span
+                                    >
+                                    <a
+                                      href="#"
+                                      class="text-decoration-none small"
+                                      >View Details</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- line chart -->
+                            <div class="container-fluid py-4">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header bg-white pb-0">
+                                                <div class="d-flex justify-content-between align-items-center">
+                                                    <h5 class="mb-0">Monthly Revenue Trend</h5>
+                                                    <div class="chart-controls">
+                                                        <select id="chartTimeframe" class="form-select form-select-sm w-auto">
+                                                            <option value="6">Last 6 Months</option>
+                                                            <option value="12">Last 12 Months</option>
+                                                            <option value="24">Last 2 Years</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="chart-container" style="position: relative; height:350px;">
+                                                    <canvas id="revenueChart"></canvas>
+                                                </div>
+                                            </div>
+                                            <div class="card-footer bg-white">
+                                                <div class="row text-center">
+                                                    <div class="col-4">
+                                                        <small class="text-muted">Total Revenue</small>
+                                                        <h6 class="mb-0" id="totalRevenueDisplay">$782,450</h6>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <small class="text-muted">Avg. Monthly</small>
+                                                        <h6 class="mb-0" id="avgRevenueDisplay">$65,204</h6>
+                                                    </div>
+                                                    <div class="col-4">
+                                                        <small class="text-muted">Growth</small>
+                                                        <h6 class="mb-0 text-success" id="revenueGrowthDisplay">+12.5%</h6>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container mt-5">
+                              <h2 class="mb-4">User Management</h2>
+                              
+                              <div class="table-responsive">
+                                  <table id="userTable" class="table table-bordered table-mobile-stack">
+                                      <thead>
+                                          <tr>
+                                              <th class="sortable" data-sort="name">Name</th>
+                                              <th class="sortable" data-sort="email">Email</th>
+                                              <th class="sortable" data-sort="role">Role</th>
+                                              <th class="sortable" data-sort="status">Status</th>
+                                          </tr>
+                                      </thead>
+                                      <tbody id="userTableBody"></tbody>
+                                  </table>
+                              </div>
+                        
+                              <nav aria-label="User table pagination">
+                                  <ul id="pagination" class="pagination justify-content-center"></ul>
+                              </nav>
+                          </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="analytics-content" class="page-content d-none">
+            <h2>Analytics</h2>
+            <p>Your analytics data and charts will appear here.</p>
+          </div>
+
+          <div id="users-content" class="page-content d-none">
+            <h2>Users</h2>
+            <p>User management and user data will appear here.</p>
+          </div>
+
+          <div id="settings-content" class="page-content d-none">
+            <h2>Settings</h2>
+            <p>Your application settings will appear here.</p>
+          </div>
+
+          <div id="support-content" class="page-content d-none">
+            <h2>Support</h2>
+            <p>Help and support resources will appear here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Bottom Navigation -->
+    <nav id="mobile-nav">
+      <ul>
+        <li>
+          <a href="#" class="active" data-page="dashboard">
+            <i class="bi bi-speedometer2"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-page="analytics">
+            <i class="bi bi-graph-up"></i>
+            <span>Analytics</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-page="users">
+            <i class="bi bi-people"></i>
+            <span>Users</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-page="settings">
+            <i class="bi bi-gear"></i>
+            <span>Settings</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" data-page="support">
+            <i class="bi bi-question-circle"></i>
+            <span>Support</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-responsive@0.1.0"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
